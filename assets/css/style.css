@@ -1,0 +1,134 @@
+/* assets/css/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delay {
+    animation: float 3s ease-in-out infinite 1s;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+/* Custom styles */
+.product-icon {
+    @apply w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-500;
+}
+
+.product-icon svg {
+    @apply w-6 h-6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-image {
+        margin-top: 2rem;
+    }
+}
+
+/* assets/css/style.css */
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 1rem;
+}
+
+table thead {
+    background-color: #2563eb;
+    color: white;
+}
+
+table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+@media (max-width: 640px) {
+    table {
+        font-size: 0.875rem;
+    }
+    table th, table td {
+        padding: 0.5rem;
+    }
+}
+
+/* assets/css/style.css */
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 1rem;
+}
+
+table thead {
+    background-color: #2563eb;
+    color: white;
+}
+
+table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.product-card img {
+    object-fit: cover;
+}
+
+.product-list {
+    max-height: 24rem;
+    overflow-y: auto;
+}
+
+@media (max-width: 640px) {
+    table {
+        font-size: 0.875rem;
+    }
+    table th, table td {
+        padding: 0.5rem;
+    }
+    .product-card img {
+        height: 8rem;
+    }
+}
